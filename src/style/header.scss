@@ -1,0 +1,38 @@
+header {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: $dark;
+
+  .container {
+    @include flex-between;
+    @include big-container;
+    padding: 0;
+    align-items: center;
+
+    @media only screen and (max-width: 600px) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    //make burger menu foe header for extra small screen //
+
+    @media only screen and (min-width: 600px) {
+      padding-right: 50px;
+      padding-left: 50px;
+    }
+
+    .header-link {
+      color: $white;
+      text-decoration: none;
+      margin-right: 24px;
+      vertical-align: middle;
+
+      &last-child {
+        margin-right: 0;
+      }
+
+      @media only screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@mixin big-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@mixin small-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin button-base {
+  border-radius: 6px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 11px 18px;
+}

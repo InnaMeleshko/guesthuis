@@ -1,0 +1,48 @@
+//reviews section!!!
+.section {
+  background-color: $light;
+
+  .container {
+    @include big-container;
+
+    @media only screen and (min-width: 600px) {
+      padding-right: 50px;
+      padding-left: 50px;
+    }
+
+    .review {
+      @include flex-between;
+
+      //
+
+      @media only screen and (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .review-block {
+        margin-bottom: 40px;
+        margin-right: 50px;
+        padding: 30px;
+        background-color: $white;
+
+        @media only screen and (max-width: 600px) {
+          width: 100%;
+          margin-right: 0;
+        }
+
+        @media only screen and (max-width: 600px) {
+          width: 100%;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .p-guest {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

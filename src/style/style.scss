@@ -1,0 +1,199 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+@import "utils.scss";
+@import "button.scss";
+@import "header.scss";
+@import "intro.scss";
+@import "quote.scss";
+@import "about.scss";
+@import "arragements.scss";
+@import "escape.scss";
+@import "together.scss";
+@import "reviews.scss";
+@import "footer.scss";
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $dark;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+ul {
+  @include flex-between;
+  padding: 0;
+
+  li {
+    list-style-type: none;
+  }
+}
+span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 53px;
+  font-weight: 300;
+}
+
+h2 {
+  margin-top: 34px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 300;
+
+  margin: 0;
+}
+
+h4 {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+
+h5 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+.orange-rectangle {
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.container {
+  @include big-container;
+}
+
+//quote section !!!!
+
+//Foto section !!!
+.foto-section {
+  height: 100vh;
+  background-image: url(/src/photo/chairs.svg);
+
+  background-size: cover;
+
+  @media only screen and (max-width: 600px) {
+    height: 300px;
+  }
+
+
+}
+
+//arrangements section !!!
+//Escape section !!!
+
+.container {
+  @include big-container;
+
+  @media only screen and (max-width: 600px) {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .section-inner-escape {
+    @include flex-between;
+
+    @media only screen and (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .inner-escape {
+      width: 50%;
+      margin-right: 100px;
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @media only screen and (max-width: 600px) {
+        width: 100%;
+      }
+
+      .escape-description {
+        display: flex;
+
+        margin-bottom: 42px;
+        align-items: normal;
+
+        p {
+          margin-bottom: 0;
+        }
+
+        img {
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+}
+
+.foto-section-second {
+  height: 100vh;
+  background-image: url(/src/photo/wardrobe.svg);
+  background-size: cover;
+
+  @media only screen and (max-width: 600px) {
+   height: 300px;
+  }
+}
+
+.button-big {
+  border-radius: 6px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: $dark;
+  padding: 14px 18px;
+  color: #ffffff;
+  border: none;
+}
+
+.container-booking {
+  @include small-container;
+
+  @media only screen and (max-width: 900px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .button-booking {
+    .button-transparent {
+      @media only screen and (max-width: 600px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
