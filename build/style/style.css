@@ -673,6 +673,14 @@ footer .container form .button-footer {
     padding-left: 50px;
   }
 }
+@media only screen and (max-width: 600px) {
+  footer .container .footer-data p {
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 0;
+  }
+}
 
 *,
 *:before,
