@@ -96,7 +96,7 @@ h5 {
 //Foto section !!!
 .foto-section {
   height: 100vh;
-  background-image: url(/src/photo/chairs.svg);
+  background-image: url(./src/photo/chairs.svg);
 
   background-size: cover;
 
@@ -155,7 +155,7 @@ h5 {
 
 .foto-section-second {
   height: 100vh;
-  background-image: url(/src/photo/wardrobe.svg);
+  background-image: url(./src/photo/wardrobe.svg);
   background-size: cover;
 
   @media only screen and (max-width: 600px) {
