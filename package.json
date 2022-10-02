@@ -1,5 +1,12 @@
 {
   "devDependencies": {
     "prettier": "2.6.2"
+  },
+  "dependencies": {
+    "sass": "^1.55.0"
+  },
+  "scripts": {
+    "build": "sass ./src/style/style.scss ./build/style/style.css"
+
   }
 }
