@@ -6,7 +6,8 @@
     "sass": "^1.55.0"
   },
   "scripts": {
-    "build": "sass ./src/style/style.scss ./build/style/style.css"
+    "build": "sass ./src/style/style.scss ./build/style/style.css",
+    "lint": "eslint ./src/style/style.scss"
 
   }
 }
