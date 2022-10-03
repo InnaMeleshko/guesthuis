@@ -117,6 +117,10 @@
   border: none;
   color: #52503b;
 }
+.button-light:hover {
+  background-color: #E48716;
+  color: #52503b;
+}
 
 .button-dark {
   border-radius: 6px;
@@ -128,6 +132,10 @@
   border: none;
   color: #ffffff;
 }
+.button-dark:hover {
+  background-color: #E48716;
+  color: #52503b;
+}
 
 .button-transparent {
   border-radius: 6px;
@@ -138,6 +146,11 @@
   background-color: transparent;
   border: 4px solid;
   color: #52503b;
+}
+.button-transparent:hover {
+  background-color: #E48716;
+  color: #52503b;
+  border: none;
 }
 
 header {
@@ -667,6 +680,10 @@ footer .container form .button-footer {
   font-style: normal;
   font-weight: 400;
 }
+footer .container form .button-footer:hover {
+  background-color: #E48716;
+  color: #52503b;
+}
 @media only screen and (max-width: 1280px) {
   footer .container .footer-data {
     padding-right: 50px;
@@ -843,6 +860,10 @@ h5 {
   padding: 14px 18px;
   color: #ffffff;
   border: none;
+}
+.button-big:hover {
+  background-color: #E48716;
+  color: #52503b;
 }
 
 .container-booking {
